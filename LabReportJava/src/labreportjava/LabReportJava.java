@@ -30,7 +30,7 @@ public class LabReportJava {
     colour=sc.nextLine();
     System.out.print("Enter Car Price:");
     price=sc.nextInt();
-    colour=sc.nextLine();
+    sc.nextLine();
     
     c[i]= new car(make,model,colour,price);   
     }
@@ -44,19 +44,14 @@ public class LabReportJava {
     
     
     int index;
+    System.out.println("Enter Index for delete:");
     index=sc.nextInt();
     c[index-1]= null;
     for(i=0;i<n;i++){
         if(c[i]!=null){
           c[i].display();
           sc.nextLine();
-          
-        }
-        
+        }   
     }
-    
-    } 
-    
-  
-    
+    }
 }
